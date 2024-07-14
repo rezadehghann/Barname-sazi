@@ -1,0 +1,23 @@
+import math
+class circle():
+    pi=math.pi
+    def __init__ (self, r=5):
+        self.rad = r
+        print("circle created")
+    def perim(self):
+        return 2*pi*self.rad
+    def Area(self):
+        return p*r*r
+    def _zdel (self):
+        print("circle deleted")
+        return -1
+K = circle(10)
+print(K.Area)
+print(K.perim)
+print(K.pi)
+del K
+#circle created
+#314
+#62.8
+#3.14
+#circle deleted
