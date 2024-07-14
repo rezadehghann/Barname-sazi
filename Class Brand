@@ -1,0 +1,16 @@
+
+class brand:
+     Brand1='Amazon'
+     Brand2='ebay'
+     Brand3='olx'
+class product:
+      Prod1="online e comment"
+      prod2="online stre"
+      Prod3='online buy'
+class popularity (brand, product):
+      prod1pop=100
+      Prod2pop=70
+      prod3pop=50
+obj= popularity()
+print(obj.Brand1+'is a' +obj.Prod1)
+     
