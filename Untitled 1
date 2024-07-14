@@ -1,0 +1,55 @@
+class A:
+    def __init__(self, age, height):
+        self.age = age
+        self.height = height
+
+    def str(self):
+        return f"Age: {self.age}, Height: {self.height}"
+
+    def print_details(self):
+        print(f"Age: {self.age}, Height: {self.height}")
+
+class B(A):
+    def init(self, age, height):
+        super().init(age, height)
+        self.size = None
+
+    def calculate_size(self, width):
+        self.size = width * self.height
+        return self.size
+
+    def print_details(self):
+        super().print_details()
+        print(f"Size: {self.size}")
+
+    def b_specific_method(self):
+        print("This is B specific method")
+
+class C(A):
+    def init(self, age, height, capacity):
+        super().init(age, height)
+        self.capacity = capacity
+
+    def print_details(self):
+        super().print_details()
+        print(f"Capacity: {self.capacity}")
+
+    def c_specific_method(self):
+        print("This is C specific method")
+
+class D(B, C):
+    def __init__(self, age, height, size, capacity, t):
+        B.init(self, age, height)
+        C.init(self, age, height, capacity)
+        self.size = size
+        self.capacity = capacity
+        self.t = t
+
+    def print_details(self):
+        super().print_details()
+        print(f"T: {self.t}")
+
+    def d_specific_method(self):
+        self.b_specific_method()
+        self.c_specific_method()
+     
