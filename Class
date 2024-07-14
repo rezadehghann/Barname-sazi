@@ -1,0 +1,68 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMnBWlWYHXkuS4xovrw9Rem",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Whyoblomovisme/barname-nevisi/blob/main/Class\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "OFQSfNtApWFd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class A():\n",
+        "    name='Ali'\n",
+        "    age=25\n",
+        "A.name='reza'\n",
+        "print (A.name)\n",
+        "test=A()\n",
+        "test. name='Ahmad'\n",
+        "print(test.age)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ty1kFRcpLOp6",
+        "outputId": "6274b8d0-bea6-4227-c806-3c9b185cd0fb"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "reza\n",
+            "25\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
